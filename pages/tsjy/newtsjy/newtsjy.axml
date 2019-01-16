@@ -1,0 +1,29 @@
+<view>
+   <view class="item-text-sm">{{textsm}}</view>
+   <view class="page-section">
+			<view class="page-section-demo">
+				<textarea onBlur="bindTextAreaBlur" auto-height placeholder="请输入内容不少于10个字" />
+			</view>
+		</view>
+  <view class="page-file">
+		<view class="page-file-title">图片（选填，提供问题截图）</view>
+    <block a:if="{{tempFilePath != ''}}">
+			<view class="image-show">
+				<view data-imsrc="{{tempFilePath}}" onTap="previewImage" >
+						<image src="{{tempFilePath}}" class="image"></image>
+				</view>
+				<image src="/image/image-close.png" class="image-close" onTap="clear" style="width:30px;height:30px" mode="scaleToFill"></image>
+			</view>
+    </block>
+    <block a:if="{{tempFilePath === ''}}">
+      <view class="image-plus" onTap="chooseImage">
+        <view class="image-plus-vertical"></view>
+      </view>
+    </block>
+	</view>
+	<view class="item-btn">
+		<view class="item-btn-qx" onTap="goTsjy">取消</view>
+		<view class="item-btn-line"></view>
+		<view class="item-btn-qd" onTap="saveFile">确定</view>
+	</view>
+</view>

@@ -1,0 +1,103 @@
+<view class="page">
+  <view class="user">
+    <view class="user-w">
+         <image class="avatar" src="{{user.avatar}}" background-size="cover"></image>
+    </view>
+   <view class="nickname lnick">
+      <view>
+          {{user.nickName}}
+      </view>
+      <view class="userPhone">
+          {{bindPhone}}
+      </view>
+    </view>
+    <view  class="nickname">
+        <view a:if="{{sfxsbd=='1'}}" class="ph" onTap="bindPhone">
+            <block a:if="{{sfbd=='0'}}">
+                绑定手机
+            </block>
+            <block a:if="{{sfbd=='1'}}">
+                重新绑定
+            </block>    
+        </view>
+    </view>
+    
+  </view>
+
+  <scroll-view scroll-y>
+        <view>
+            <view class="a-list">
+                <view class="a-list-items">
+                    <view class="a-list-item am-list-item-middle"
+                        hover-class="a-list-item-hover"
+                        onTap="handleListItemTap"
+                        data-index='0'>
+                        <view class="a-list-item-line">
+                            <image class="a-list-item-thumb" src="/image/center-cz.png" mode="scaleToFill" />
+                            <text class="a-list-item-content">我要充值(余额：{{account_num}}元)</text>
+                            <view class="a-list-arrow a-list-arrow-horizontal" />
+                            <view class="a-list-item-bottom" />
+                        </view>
+                    </view>
+                    <view class="a-list-item am-list-item-middle"
+                        hover-class="a-list-item-hover"
+                        onTap="handleListItemTap"
+                        data-index='1'>
+                        <view class="a-list-item-line">
+                            <image class="a-list-item-thumb" src="/image/center-czjl.png" mode="scaleToFill" />
+                            <text class="a-list-item-content">消费记录</text>
+                            <view class="a-list-arrow a-list-arrow-horizontal" />
+                            <view class="a-list-item-bottom" />
+                        </view>
+                      </view>
+                      <view class="a-list-item am-list-item-middle"
+                        hover-class="a-list-item-hover"
+                        onTap="handleListItemTap"
+                        data-index='2'>
+                        <view class="a-list-item-line">
+                            <image class="a-list-item-thumb" src="/image/center-cd.png" mode="scaleToFill" />
+                            <text class="a-list-item-content">当前充电({{dqcd_num}}条)</text>
+                            <view class="a-list-arrow a-list-arrow-horizontal" />
+                            <view class="a-list-item-bottom" />
+                        </view>
+                      </view>
+                      <view class="a-list-item am-list-item-middle"
+                        hover-class="a-list-item-hover"
+                        onTap="handleListItemTap"
+                        data-index='3'>
+                        <view class="a-list-item-line">
+                            <image class="a-list-item-thumb" src="/image/center-cdjl.png" mode="scaleToFill" />
+                            <text class="a-list-item-content">充电记录</text>
+                            <view class="a-list-arrow a-list-arrow-horizontal" />
+                            <view class="a-list-item-bottom" />
+                        </view>
+                      </view>  
+                      
+                    <view class="a-list-item am-list-item-middle" hover-class="a-list-item-hover"
+                        onTap="handleListItemTap"
+                        data-index='4'
+                    >
+                        <view class="a-list-item-line">
+                            <image class="a-list-item-thumb" src="/image/center-about.png" mode="scaleToFill" />
+                            <text class="a-list-item-content">联系我们</text>
+                            <view class="a-list-arrow a-list-arrow-horizontal" />
+                            <view class="a-list-item-bottom" />
+                        </view>
+                    </view>
+                    <view class="a-list-item last"
+                        hover-class="a-list-item-hover"
+                        onTap="handleListItemTap"
+                        data-index='5'>
+                        <view class="a-list-item-line">
+                            <image class="a-list-item-thumb" src="/image/center-tsjy.png" mode="scaleToFill" />
+                            <text class="a-list-item-content">投诉建议</text>
+                            <view class="a-list-arrow a-list-arrow-horizontal" />
+                            <view class="a-list-item-bottom" />
+                        </view>
+                      </view>  
+                </view>
+            </view>
+        </view>
+  </scroll-view>
+   
+</view>

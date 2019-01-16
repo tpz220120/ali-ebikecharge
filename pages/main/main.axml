@@ -1,0 +1,38 @@
+<view class="page">
+  <view a:if="{{tipshow==='1'}}" class="page-tip">
+    <view class="tip-img">
+        <image src="/image/tip-addr.png" style="width:16px;height:20px;"mode="scaleToFill"/>
+    </view>
+    <view class="tip-txt">
+        {{tipname}}
+    </view>
+    <view class="tip-img" onTap="goDetail">
+        <image src="/image/tip-in.png" style="width:20px;height:15px;" mode="scaleToFill"/>
+    </view>
+  </view>
+  <view a:if="{{tipshow==='0'}}" class="page-tip">
+    <view class="tip-img">
+        <image src="/image/tip-bike.png" style="width:30px;height:17px;"mode="scaleToFill"/>
+    </view>
+    <view class="tip-txt">
+        欢迎使用驿吧充电！
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <map
+        id="map"
+        longitude="{{longitude}}"
+        latitude="{{latitude}}"
+        scale="{{scale}}"
+        controls="{{controls}}"
+        onControlTap="controltap"
+        markers="{{markers}}"
+        onMarkerTap="markertap"
+        onRegionChange="regionchange"
+        onTap="tap"
+        show-location style="width: 100%; height:{{mainHeight}}">
+      </map>
+    </view>
+  </view>
+</view>

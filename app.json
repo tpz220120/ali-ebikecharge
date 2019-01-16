@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/paycharge/paycharge",
+    "pages/cdxx/cdxx",
+    "pages/tsjy/tsjy",
+    "pages/charge/charge",
+    "pages/tsjy/newtsjy/newtsjy",
+    "pages/tsjy/tsjymx/tsjymx",
+    "pages/user/user",
+    "pages/user/cz/cz",
+    "pages/user/xfjl/xfjl",
+    "pages/user/hiscd/hiscd",
+    "pages/user/hiscd/tkd/tkd",
+    "pages/user/user-cdjl/user-cdjl",
+    "pages/user/bindphone/bindphone",
+    "pages/user/about/about",
+    "pages/cdsm/cdsm",
+    "pages/tipview/cdview/cdview"
+  ],
+  "window": {
+    "titleBarColor":"#3399FF",
+    "defaultTitle": "驿吧充电"
+  }
+}

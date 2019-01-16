@@ -1,0 +1,42 @@
+<view class="page">
+    <view class="ye_bk">
+   		<view class="ye_text">账户余额</view>
+   		<view class="ye_account">
+   			<view class="ye_img">
+   				<image src="/image/rmb.png" style="width:15px;height:20px" mode="scaleToFill" />
+        </view>
+        <view class="ye_num">
+          <text class="num_zs">{{num_zs}}</text>
+          <text class="num_xs">{{num_xs}}</text>
+        </view>
+	   		<view class="ye_dw">(元)</view>
+   		</view>
+   	</view>
+  	
+   	<view class="cz_bk">
+   		<view class="cz_czje">充值金额</view>
+   			<view class="grid-item-wrapper grid-margin">
+		      <view class="grid-text"><view class="{{check==10?'czcss-click':''}}" data-v="10" onTap="innum">10元</view></view>
+		      <view class="grid-text"><view class="{{check==20?'czcss-click':''}}" data-v="20" onTap="innum">20元</view></view>
+		      <view class="grid-text"><view class="{{check==30?'czcss-click':''}}" data-v="30" onTap="innum">30元</view></view>
+		    </view>
+   			<view class="grid-item-wrapper">
+		      <view class="grid-text"><view class="{{check==50?'czcss-click':''}}" data-v="50" onTap="innum">50元</view></view>
+		      <view class="grid-text"><view class="{{check==80?'czcss-click':''}}" data-v="80" onTap="innum">80元</view></view>
+		      <view class="grid-text"><view class="{{check==100?'czcss-click':''}}" data-v="100" onTap="innum">100元</view></view>
+        </view>
+      <view class="cz_czje_zdy">
+				<input type="number" onInput="bindKeyInput" class="cz_czje_num"  id="num" placeholder="请输入支付金额" value="{{zfje}}"/>
+        <text class="cz_czje_dw">元</text>   
+      </view>
+      <view class="cz_czje_btn">
+      <button type="primary" class="cz_czje_btntext" data-zfje="{{zfje}}" onTap="ljcz">立即充值</button>
+      </view>
+   		<view class="cz_czje_tip">
+   			<view class="cz_czje_tips">
+   				<image src="/image/tips.png" style="width:12px;height:12px"mode="scaleToFill" />
+	   		</view>
+   			<view class="cz_czje_tiptext">充值余额暂不支持退款和提现，请合理安排充值金额。</view>
+   		</view>
+   	</view>
+</view>

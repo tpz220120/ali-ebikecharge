@@ -1,0 +1,52 @@
+page {
+  background-color: #F7F7F7;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: Regular;
+  font-size: 24rpx;
+}
+
+.page-tip {
+  display: flex;
+  flex-direction: row;
+  height:40px;
+  width:100%;
+  background:rgba(255,255,255,1);
+  box-shadow:2px 0px 10px rgba(10,31,51,0.3);
+  align-items: center;
+}
+
+.page-section {
+  background: #fff;
+}
+
+.page-section-title {
+  padding: 16rpx 32rpx;
+}
+
+.main-btn {
+  position: absolute;
+  width:200px;
+  height:100px;
+  left:75;
+  bottom:500;
+  z-index: 2;
+}
+
+.tip-txt {
+  margin-left:10px;
+  text-align:left;
+  font-size:15px;
+  width:70%;
+  font-family:MicrosoftYaHei;
+  color:rgba(100,100,100,1);
+}
+
+.tip-img {
+  margin-left:20px;
+  justify-content: center;
+}
+
